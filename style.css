@@ -1,0 +1,19 @@
+h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: #a39c87;
+  font-style: italic;
+  text-align: center;
+  font-size: 50px;
+}
+
+.box {
+  width: 100%;
+  height: 30px;
+  padding: 5;
+  background: #a39c87;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */
