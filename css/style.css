@@ -1,26 +1,28 @@
 
 h1 {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  color: #a39c87;
+  color: rgb(59, 58, 58);
   font-style: italic;
   text-align: center;
-  font-size: 4em;
+  font-size: 3em;
 }
-/* menu {
-
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-menu div {
-} */
+a {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: rgb(59, 58, 58);
+  font-size: 20px;
+  text-decoration: none;
+}
 .box {
   width: 100px;
   height: 35px;
   border: 5;
   padding: 10px;
   margin: 5px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  background-color: white;
   border-radius: 5%;
   transition: width 1s, height 1s;
 }
@@ -40,6 +42,19 @@ footer {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   color: rgb(59, 58, 58);
   font-style: italic;
+}
+.my-photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: rgb(59, 58, 58);
+  font-style: italic;
+  border: 10px;
+  padding: 10px;
 }
 
 
