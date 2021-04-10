@@ -1,0 +1,19 @@
+.about.me {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-end;
+  
+  }
+  .my-history {
+    display: block;
+    background-color: hsl(45, 29%, 77%);
+    border: 2px solid rgb(59, 58, 58);
+    box-shadow: 2px 3px rgb(59, 58, 58);
+  }
+  .my-interestes {
+    display: block;
+    background-color: hsl(45, 29%, 77%);
+    border: 2px solid rgb(59, 58, 58);
+    box-shadow: 2px 3px rgb(59, 58, 58);
+  }
+  
