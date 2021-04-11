@@ -1,8 +1,11 @@
-.about.me {
-    display: flex;
-    flex-wrap: wrap;
-    align-self: flex-end;
-  
+/* style the element with the id "photo"*/
+ #my.photo {
+  display: block;
+  width: 50px;
+  border-radius: 50%;
+  }
+  .aside {
+    /*  */
   }
   .my-history {
     display: block;
