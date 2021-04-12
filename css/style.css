@@ -25,6 +25,7 @@ a {
   margin: 5px;
   border-radius: 5%;
   transition: width 1s, height 1s;
+  text-align: center;
 }
 .box:hover {
   background-color: #a39c87;
@@ -56,6 +57,53 @@ p {
   border: 10px;
   padding: 10px;
 }
+/* about box is a big container with 3 child inside */
+.aboutbox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  flex-direction: row;
+}
+.about-me {
+  display: flex;
+  justify-items: left;
+}
+/* style the element with the id "photo" */
+#myphoto {
+  width: 150px;
+  height: 150px;
+  border: 10px;
+  padding: 10px;
+  border-radius: 50%;
+  align-self: right;
+  box-shadow: 2px 3px rgb(59, 58, 58);
+  }
+  aside {
+    display: flex;
+    justify-content: stretch;
+    flex-direction: row;
+    margin: 20px;
+    padding: 10px;
+    width: 25%;
+  } 
+  .about-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 30px;
+    justify-content: space-between;
+  } 
+  .my-history {
+    display: block;
+    border: 2px solid rgb(59, 58, 58);
+    box-shadow: 2px 3px rgb(59, 58, 58);
+  }
+  .my-interestes {
+    display: block;
+    border: 2px solid rgb(59, 58, 58);
+    box-shadow: 2px 3px rgb(59, 58, 58);
+  }
+  
 
 
 
