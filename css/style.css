@@ -1,4 +1,12 @@
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: solid 1px black;
+}
+body{
+  box-sizing: border-box;
+}
 h1 {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   color: rgb(59, 58, 58);
@@ -28,8 +36,9 @@ a {
   text-align: center;
 }
 .box:hover {
-  background-color: #a39c87;
-  width: 160;
+  /* box grow a bit and change color and hover */
+  background-color:rgb(187, 183, 183);
+  width: 120px;
   height: 30px;
 }
 img {
@@ -46,9 +55,9 @@ footer {
 }
 .my-photo {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
+  float:right;
+  width:80px;
+  height:80px;
 }
 p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
@@ -57,7 +66,6 @@ p {
   border: 10px;
   padding: 10px;
 }
-/* about box is a big container with 3 child inside */
 .aboutbox {
   display: flex;
   flex-wrap: wrap;
@@ -72,39 +80,152 @@ p {
 #myphoto {
   width: 150px;
   height: 150px;
-  border: 10px;
-  padding: 10px;
+  border: 5px;
+  padding: 5px;
   border-radius: 50%;
   align-self: right;
   box-shadow: 2px 3px rgb(59, 58, 58);
+  float: right;
   }
-  aside {
+  header {
     display: flex;
-    justify-content: stretch;
     flex-direction: row;
     margin: 20px;
     padding: 10px;
-    width: 25%;
+    width: 100%;
+    justify-content: space-around;
   } 
   .about-box {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin: 30px;
+    margin: 5px;
     justify-content: space-between;
   } 
   .my-history {
     display: block;
     border: 2px solid rgb(59, 58, 58);
     box-shadow: 2px 3px rgb(59, 58, 58);
+    border-radius: 3%;
+    margin: 30px;
+    width: 90%;
+    padding: 30px;
+    justify-content: center;
   }
   .my-interestes {
     display: block;
     border: 2px solid rgb(59, 58, 58);
     box-shadow: 2px 3px rgb(59, 58, 58);
+    border-radius: 3%;
+    margin: 30px;
+    width: 90%;
+    padding: 30px;
+    justify-content: center;
+  }
+ 
+  
+  .icon {
+  box-sizing: border-box;
+  width: 500px;
+  height: 500px;
+  border: 5px solid rgb(59, 58, 58)
+  /* padding: 10px;
+  margin: 5px;
+  border-radius: 5%;
+  text-align: center; */
   }
   
-
+  .html{
+    border: 2px solid rgb(59, 58, 58);
+    box-shadow: 2px 3px rgb(59, 58, 58);
+    border-radius: 3%;
+    margin: 30px;
+    width: 90%;
+    padding: 30px;
+  }
+  .css {
+    border: 2px solid rgb(59, 58, 58);
+    box-shadow: 2px 3px rgb(59, 58, 58);
+    border-radius: 3%;
+    margin: 30px;
+    width: 90%;
+    height: 50px;
+    padding: 30px;
+  }
+  .sass {
+    border: 2px solid rgb(59, 58, 58);
+    box-shadow: 2px 3px rgb(59, 58, 58);
+    border-radius: 3%;
+    margin: 30px;
+    width: 90%;
+    padding: 30px;
+  }
+  @media only screen and (min-width:800px){
+    /* for mobile phones */
+    .box{
+      display: flex;
+      flex-wrap: wrap;
+      /* width: 100%; */
+      padding: 20px;
+    }
+    .about-box {
+      display: block;
+      flex-direction: column;
+    }
+    .my-history {
+      display: block;
+      margin: 10px;
+      width: 50%;
+      padding: 10px;
+    }
+    .my-interestes {
+      display: block;
+      margin: 10px;
+      width: 50%;
+      padding: 10px;
+    }
+    @media only screen and (max-width:1000px){
+      /* for ipad */
+      .box {
+       display: block;
+       flex-wrap: wrap;
+       width: 140px;
+       height: 35px;
+       border: 5;
+       padding: 10px;
+       margin: 5px;
+       border-radius: 5%;
+       transition: width 1s, height 1s;
+       text-align: center;
+    }
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    img {
+      padding: 50px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+      border-radius: 3%;
+    }
+    .body{
+     margin: 10px;
+    }
+    @media only screen and (max-width:1300px){
+      .box {
+        width: 100px;
+        height: 35px;
+        border: 5;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 5%;
+        transition: width 1s, height 1s;
+        text-align: center;
+      }
+      
 
 
 

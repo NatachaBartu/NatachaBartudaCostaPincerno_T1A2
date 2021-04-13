@@ -1,0 +1,66 @@
+.my-photo {
+    display: block;
+    float:right;
+    width:80px;
+    height:80px;
+  }
+  p {
+    border: 10px;
+    padding: 10px;
+  }
+  .aboutbox {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    flex-direction: row;
+  }
+  .about-me {
+    display: flex;
+    justify-items: left;
+  }
+  /* style the element with the id "photo" */
+  #myphoto {
+    width: 150px;
+    height: 150px;
+    border: 5px;
+    padding: 5px;
+    border-radius: 50%;
+    align-self: right;
+    box-shadow: 2px 3px rgb(59, 58, 58);
+    float: right;
+    }
+    header {
+      display: flex;
+      flex-direction: row;
+      margin: 20px;
+      padding: 10px;
+      width: 100%;
+      justify-content: space-around;
+    } 
+    .about-box {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      margin: 5px;
+      justify-content: space-between;
+    } 
+    .my-history {
+      display: block;
+      border: 2px solid rgb(59, 58, 58);
+      box-shadow: 2px 3px rgb(59, 58, 58);
+      border-radius: 3%;
+      margin: 30px;
+      width: 90%;
+      padding: 30px;
+      justify-content: center;
+    }
+    .my-interestes {
+      display: block;
+      border: 2px solid rgb(59, 58, 58);
+      box-shadow: 2px 3px rgb(59, 58, 58);
+      border-radius: 3%;
+      margin: 30px;
+      width: 90%;
+      padding: 30px;
+      justify-content: center;
+    }

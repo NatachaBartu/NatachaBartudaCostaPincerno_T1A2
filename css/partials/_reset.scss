@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: solid 1px black;
+    font-family: "Montserrat", sans-serif;
+  }
+  body {
+    background-image: url('../images/marble.jpg');
+    height: 100vh;
+    background-size: cover;
+  }
+  p {
+    font-family: "Montserrat", sans-serif;
+    color: rgb(59, 58, 58);
+  }
+  h1 {
+    color: rgb(59, 58, 58);
+    font-style: italic;
+    text-align: center;
+    font-size: 3em;
+  }
+  footer {
+    color: rgb(59, 58, 58);
+    font-style: italic;
+  }
+  
