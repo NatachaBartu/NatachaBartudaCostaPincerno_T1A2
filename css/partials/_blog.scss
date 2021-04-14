@@ -1,16 +1,35 @@
-.blog-photo {
+#blog {
+    height: 500vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    height: 50px;
-    width: 100%;
-    margin: 0;
+    margin: 20px;
     padding: 0;
 }
-.a {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    height: 80px;
-    
+.image-1 {
+    height: 400px;
+    width: 400px;
+    margin: 20px; 
+    justify-content: center;
+   
+}
+.image-2 {
+    height: 400px;
+    width: 400px; 
+    margin: 20px; 
+}
+.image-3 {
+    height: 400px;
+    width: 400px; 
+    margin: 20px; 
+}
+.image-4 {
+    height: 400px;
+    width: 400px; 
+    margin: 20px; 
+}
+.image-5 {
+    height: 400px;
+    width: 400px; 
+    margin: 20px; 
 }

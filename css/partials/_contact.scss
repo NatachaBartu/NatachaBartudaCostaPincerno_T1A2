@@ -1,0 +1,17 @@
+#nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.contact-box {
+    display: block;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 30px;
+    padding: 30px;
+    // width: 400px;
+    // height: 200px;
+    border: 30px red;
+   
+    
+}

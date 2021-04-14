@@ -2,22 +2,81 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: solid 1px black;
-  font-family: "Montserrat", sans-serif;
 }
 
 body {
+  font-family: "Montserrat", sans-serif;
   background-image: url("../images/marble.jpg");
   height: 100vh;
   background-size: cover;
+  color: #3b3a3a;
 }
 
-p {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+nav {
+  background: #cfcccc;
+  height: 80px;
+  widht: 100%;
+}
+
+nav url {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+
+a.move.home, a:hover {
+  /* box grow a bit and change color when hover */
+  background: #706f6f;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+a.move.about, a:hover {
+  background: #706f6f;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+a.move.portfolio, a:hover {
+  background: #706f6f;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+a.move.blog, a:hover {
+  background: #706f6f;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+a.move.contact, a:hover {
+  background: #706f6f;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+h1 {
   color: #3b3a3a;
   font-style: italic;
+  text-align: center;
+  font-size: 3em;
 }
 
 h1 {
@@ -30,16 +89,12 @@ h1 {
 footer {
   color: #3b3a3a;
   font-style: italic;
+  margin: 10px;
+  position: fixed;
+  bottom: 0;
 }
 
-h1 {
-  color: #3b3a3a;
-  font-style: italic;
-  text-align: center;
-  font-size: 3em;
-}
-
-.menu {
+ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,32 +104,7 @@ h1 {
       justify-content: space-around;
 }
 
-a {
-  color: #3b3a3a;
-  font-size: 20px;
-  text-decoration: none;
-}
-
-.box {
-  width: 100px;
-  height: 35px;
-  border: 5px;
-  padding: 10px;
-  margin: 5px;
-  border-radius: 5%;
-  -webkit-transition: width 1s, height 1s;
-  transition: width 1s, height 1s;
-  text-align: center;
-}
-
-.box:hover {
-  /* box grow a bit and change color and hover */
-  background-color: #bbb7b7;
-  width: 120px;
-  height: 30px;
-}
-
-img {
+#computer {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -82,9 +112,11 @@ img {
   border-radius: 2%;
 }
 
-footer {
-  color: #3b3a3a;
-  font-style: italic;
+@media (max-width: 858px) {
+  nav ul li {
+    display: inline-block;
+    font-size: 20px;
+  }
 }
 
 .my-photo {
@@ -281,7 +313,8 @@ main {
   height: 100%;
 }
 
-.blog-photo {
+#blog {
+  height: 500vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -289,9 +322,64 @@ main {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: 200px;
-  width: 100%;
-  margin: 0;
+  margin: 20px;
   padding: 0;
+}
+
+.image-1 {
+  height: 400px;
+  width: 400px;
+  margin: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.image-2 {
+  height: 400px;
+  width: 400px;
+  margin: 20px;
+}
+
+.image-3 {
+  height: 400px;
+  width: 400px;
+  margin: 20px;
+}
+
+.image-4 {
+  height: 400px;
+  width: 400px;
+  margin: 20px;
+}
+
+.image-5 {
+  height: 400px;
+  width: 400px;
+  margin: 20px;
+}
+
+#nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contact-box {
+  display: block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 30px;
+  padding: 30px;
+  border: 30px red;
 }
 /*# sourceMappingURL=main.css.map */
