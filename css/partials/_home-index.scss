@@ -1,45 +1,24 @@
-
-  h1 {
-    color: rgb(59, 58, 58);
-    font-style: italic;
-    text-align: center;
-    font-size: 3em;
-  }
-  .menu {
+ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  a {
-    color: rgb(59, 58, 58);
-    font-size: 20px;
-    text-decoration: none;
-  }
-  .box {
-    width: 100px;
-    height: 35px;
-    border: 5px;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 5%;
-    transition: width 1s, height 1s;
-    text-align: center;
-  }
-  .box:hover {
-    /* box grow a bit and change color and hover */
-    background-color:rgb(187, 183, 183);
-    width: 120px;
-    height: 30px;
-  }
-  img {
+  #computer {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
     border-radius: 2%;
   }
-  footer {
-    color: rgb(59, 58, 58);
-    font-style: italic;
-  }
+  @media (max-width: 858px){
+ ul{
+   position: fixed;
+   height: 100vh;
+   width: 100%;
+   top: 80px;
+ }
+ nav ul li {
+   display: inline-block;
+   font-size: 20px;
+ }
   
