@@ -5,6 +5,9 @@
     box-sizing: border-box;
     border: solid 1px black;
 }
+:root {
+--background-color:rgb(59, 58, 58);
+}
   body {
     font-family: "Montserrat", sans-serif;
     background-image: url('../images/marble.jpg');
@@ -13,9 +16,9 @@
     color: rgb(59, 58, 58);
   }
   nav {
-    background: rgb(207, 204, 204);
+    background:  rgb(173, 169, 169);
     height: 80px;
-    widht: 100%
+    width: 100%
   }
   nav url {
     float: right;
