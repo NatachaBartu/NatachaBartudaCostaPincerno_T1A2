@@ -8,6 +8,10 @@
   border: solid 1px black;
 }
 
+:root {
+  --background-color:rgb(59, 58, 58);
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   background-image: url("../images/marble.jpg");
@@ -17,9 +21,9 @@ body {
 }
 
 nav {
-  background: #cfcccc;
+  background: #ada9a9;
   height: 80px;
-  widht: 100%;
+  width: 100%;
 }
 
 nav url {
@@ -30,7 +34,7 @@ nav url {
 nav ul li {
   display: inline-block;
   line-height: 80px;
-  margin: 0 5px;
+  margin: 0;
 }
 
 nav ul li a {
@@ -113,7 +117,13 @@ ul {
 }
 
 @media (max-width: 858px) {
-  nav ul li {
+  .ul {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 80px;
+  }
+  .nav ul li {
     display: inline-block;
     font-size: 20px;
   }
@@ -126,24 +136,20 @@ ul {
   height: 80px;
 }
 
-p {
-  border: 10px;
-  padding: 10px;
-}
-
 .aboutbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin: 5px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .about-me {
@@ -153,8 +159,8 @@ p {
   justify-items: left;
 }
 
-/* style the element with the id "photo" */
 #myphoto {
+  /* style the element with the id "photo" */
   width: 150px;
   height: 150px;
   border: 5px;
@@ -183,27 +189,12 @@ header {
       justify-content: space-around;
 }
 
-.about-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin: 5px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .my-history {
   display: block;
+  background-color: white;
   border: 2px solid #3b3a3a;
-  -webkit-box-shadow: 2px 3px #3b3a3a;
-          box-shadow: 2px 3px #3b3a3a;
+  -webkit-box-shadow: 3px 6px #3b3a3a;
+          box-shadow: 3px 6px #3b3a3a;
   border-radius: 3%;
   margin: 30px;
   width: 90%;
@@ -215,9 +206,10 @@ header {
 
 .my-interestes {
   display: block;
+  background-color: white;
   border: 2px solid #3b3a3a;
-  -webkit-box-shadow: 2px 3px #3b3a3a;
-          box-shadow: 2px 3px #3b3a3a;
+  -webkit-box-shadow: 3px 6px #3b3a3a;
+          box-shadow: 3px 6px #3b3a3a;
   border-radius: 3%;
   margin: 30px;
   width: 90%;
@@ -237,61 +229,22 @@ h1 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 100%;
   height: 150px;
-  margin: 50px;
-  padding: 0;
-}
-
-.html {
-  border: 2px solid #3b3a3a;
   margin: 0;
   padding: 0;
-  -webkit-box-shadow: 2px 3px #3b3a3a;
-          box-shadow: 2px 3px #3b3a3a;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-#html-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.icon img {
+  display: block;
   width: 150px;
   height: 150px;
-  border-radius: 15%;
-}
-
-#css-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  justify-items: center;
-  width: 150px;
-  height: 150px;
-  border-radius: 15%;
-}
-
-#sass-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  justify-items: center;
-  width: 150px;
-  height: 150px;
-  border-radius: 15%;
 }
 
 .my-work {
@@ -309,12 +262,7 @@ h1 {
   margin: 80px;
 }
 
-main {
-  height: 100%;
-}
-
-#blog {
-  height: 500vh;
+.blog-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -322,64 +270,182 @@ main {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: 20px;
-  padding: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid blue;
 }
 
-.image-1 {
-  height: 400px;
-  width: 400px;
-  margin: 20px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.image-2 {
-  height: 400px;
-  width: 400px;
-  margin: 20px;
-}
-
-.image-3 {
-  height: 400px;
-  width: 400px;
-  margin: 20px;
-}
-
-.image-4 {
-  height: 400px;
-  width: 400px;
-  margin: 20px;
-}
-
-.image-5 {
-  height: 400px;
-  width: 400px;
-  margin: 20px;
-}
-
-#nav {
+.sand-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.contact-box {
-  display: block;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin: 30px;
+  width: 400px;
+  max-width: 100%;
+  border: 2px solid pink;
+  margin: 5px;
+}
+
+.whale-container {
+  width: 400px;
+  max-width: 100%;
+  border: 2px solid pink;
+  margin: 5px;
+}
+
+.leaf-container {
+  width: 400px;
+  max-width: 100%;
+  border: 2px solid pink;
+  margin: 5px;
+}
+
+.mountain-container {
+  width: 400px;
+  max-width: 100%;
+  border: 2px solid pink;
+  margin: 5px;
+}
+
+.beach-container {
+  width: 400px;
+  max-width: 100%;
+  border: 2px solid pink;
+  margin: 5px;
+}
+
+.text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: calc(100% 1.5em);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.p-container {
+  text-align: center;
+}
+
+.header {
+  text-align: center;
+  height: 4em;
+  line-height: 4em;
+}
+
+.image-1 {
+  height: 250px;
+  width: 250px;
+  border-radius: 4px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-2 {
+  height: 250px;
+  width: 250px;
+  border-radius: 4px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-3 {
+  height: 250px;
+  width: 250px;
+  border-radius: 4px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-4 {
+  height: 250px;
+  width: 250px;
+  border-radius: 4px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-5 {
+  height: 250px;
+  width: 250px;
+  border-radius: 4px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  margin: 50px;
+}
+
+.contact-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 400px;
+  max-width: 100%;
+  border: 2px #3b3a3a;
+  border-radius: 3%;
+  background-color: #cac6c6;
   padding: 30px;
-  border: 30px red;
+  margin: auto;
+}
+
+input[type=text] {
+  width: 100%;
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #3b3a3a;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #3b3a3a;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input[type=submit]:hover {
+  background-color: black;
 }
 /*# sourceMappingURL=main.css.map */
