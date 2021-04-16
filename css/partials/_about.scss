@@ -1,58 +1,80 @@
-.my-photo {
-    display: block;
-    float:right;
-    width:80px;
-    height:80px;
-  }
-  .aboutbox {
+#big-box {
+  // box include all sections
+  margin: 2px;
+}
+.top-box {
+  // this box display my name and photo
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     margin: 5px;
     justify-content: space-between;
   }
-  .about-me {
-    display: flex;
-    justify-items: left;
+.myphoto {
+    display: block;
+    float:right;
+    width:80px;
+    height:80px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  h1 {
+    text-align: left;
+    margin: 0 ;
+    padding: 0;
   }
   #myphoto {
-  /* style the element with the id "photo" */
+    display: flex;
+    flex-wrap: wrap;
+    align-self: right;
+    float: right;
     width: 150px;
     height: 150px;
-    border: 5px;
     padding: 5px;
     border-radius: 50%;
-    align-self: right;
-    box-shadow: 2px 3px rgb(59, 58, 58);
-    float: right;
     }
-    header {
-      display: flex;
-      flex-direction: row;
-      margin: 20px;
-      padding: 10px;
-      width: 100%;
-      justify-content: space-around;
-    } 
-    .my-history {
-      display: block;
-      background-color: white;
-      border: 2px solid rgb(59, 58, 58);
-      box-shadow: 3px 6px rgb(59, 58, 58);
-      border-radius: 3%;
-      margin: 30px;
-      width: 90%;
-      padding: 30px;
-      justify-content: center;
+    .about-box {
+      margin: 10px;
     }
-    .my-interestes {
-      display: block;
-      background-color: white;
-      border: 2px solid rgb(59, 58, 58);
-      box-shadow: 3px 6px rgb(59, 58, 58);
-      border-radius: 3%;
-      margin: 30px;
-      width: 90%;
-      padding: 30px;
-      justify-content: center;
+    .my-history p {
+      @include box-font;
+      @include article-box;
+      font-size: 1em;
+      padding: 7px;
     }
+    .my-interestes p {
+      @include box-font;
+      @include article-box;
+      font-size: 1em;
+      padding: 7px;
+    }
+    .article p {
+      @include box-font;
+      font-size: 3em;
+    }
+    //  responsive media queries
+@media only screen and (min-width: 601px) and (max-width: 769px) {
+  /* For tablets: */
+}
+@media only screen and (max-width: 600px) {
+  /* For mobile: */
+  .myphoto {
+    width:50px;
+    height:50px;
+    align-content: right;
+    margin: 0;
+    padding: 0;
+ }
+  .article h1 {
+    text-align: left;
+    font-size: 1em;
+    margin: 0;
+  }
+  .my-history p {
+    margin: auto;
+  }
+  .my-interestes p{
+    margin: auto;
+    padding: 20px;
+  }
+} 

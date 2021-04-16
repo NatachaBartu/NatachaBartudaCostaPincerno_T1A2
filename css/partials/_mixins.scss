@@ -1,0 +1,17 @@
+@mixin box-font {
+    font-family: "Montserrat", sans-serif;
+    color: rgb(59, 58, 58);
+    font-style: italic;
+    text-align: center;
+}
+@mixin article-box {
+    display: block;
+        background-color: rgb(238, 234, 234);
+        border: 2px solid rgb(59, 58, 58);
+        box-shadow: 3px 6px rgb(59, 58, 58);
+        border-radius: 3%;
+        margin: 30px;
+        width: 90%;
+        padding: 30px;
+        justify-content: center;
+  }

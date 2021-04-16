@@ -7,33 +7,9 @@
   margin: 0 auto;
   border: 2px solid blue;
 }
-.sand-container {
+.bb-container {
   display: flex;
   flex-direction: column;
-  width: 400px;
-  max-width: 100%;
-  border: 2px solid pink;
-  margin: 5px;
-}
-.whale-container {
-  width: 400px;
-  max-width: 100%;
-  border: 2px solid pink;
-  margin: 5px;
-}
-.leaf-container {
-  width: 400px;
-  max-width: 100%;
-  border: 2px solid pink;
-  margin: 5px;
-}
-.mountain-container {
-  width: 400px;
-  max-width: 100%;
-  border: 2px solid pink;
-  margin: 5px;
-}
-.beach-container {
   width: 400px;
   max-width: 100%;
   border: 2px solid pink;
@@ -53,7 +29,7 @@
   height: 4em;
   line-height: 4em;
 }
-.image-1 {
+.image-blog {
   height: 250px;
   width: 250px;
   border-radius: 4px;
@@ -61,35 +37,13 @@
   margin-left: auto;
   margin-right: auto;
 }
-.image-2 {
-  height: 250px;
-  width: 250px;
-  border-radius: 4px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.image-3 {
-  height: 250px;
-  width: 250px;
-  border-radius: 4px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.image-4 {
-  height: 250px;
-  width: 250px;
-  border-radius: 4px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.image-5 {
-  height: 250px;
-  width: 250px;
-  border-radius: 4px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+ //  responsive media queries
+ @media only screen and (min-width: 601px) and (max-width: 769px) {
+  /* For tablets: */
+ }
+@media only screen and (max-width: 600px) {
+  /* For mobile: */
+  header h1 {
+    text-align: center;
+  }
 }
