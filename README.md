@@ -6,10 +6,13 @@
 1. My githup [repo](https://github.com/NatachaBartu/NatachaBartudaCostaPincerno_T1A2)
 
 ## Purpose
+
 Build a web page where I can demonstrate the skills i am learning trough boot camp.
 
 ## Functionality
+
 A static web page which contains 5 pages:
+
 1. Home ([wireframe](docs/wireframe/index_wireframe.png), [screenshot](docs/screenshot/index.png))
 The landing page for people looking for a new junior developer.
 1. About ([wireframe](docs/wireframe/about_wireframe.png), [screenshot](docs/screenshot/about.png))
@@ -22,15 +25,31 @@ The page where I blog.
 The page where people can contact me.
 
 ## Site Map
+
 The Picture below demonstrates my web site map.
 ![image](docs/sitemap.png)
+
 ## Audience
+
 This web site is for anyone that is looking for a junior developer.
 
+## Trello Board
+
+A [Trello Board](https://trello.com/b/kKTmnNYE/portfolio) was used to capture my tasks.
+Below there some links for trello screenshots. They were took at the end of the project, as I haven't took them at the end of the day. These screenshots try to show that the cards was created/moved in the past.
+
+1. [Trello Screenshot 1](docs/screenshot/trello-1.png)
+1. [Trello Screenshot 2](docs/screenshot/trello-2.png)
+1. [Trello Screenshot 3](docs/screenshot/trello-3.png)
+1. [Trello Screenshot 4](docs/screenshot/trello-4.png)
+
 ## Technologies
+
 This web site was build using:
+
 1. HTML
 1. scss
 
-## Deployment 
+## Deployment
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ba68823f-6ea7-47cf-aaae-2f16481d6fe7/deploy-status)](https://app.netlify.com/sites/natacha-bartu/deploys)
