@@ -10,15 +10,15 @@ Build a web page where I can demonstrate the skills i am learning trough boot ca
 
 ## Functionality
 A static web page which contains 5 pages:
-1. Home ([wireframe](docs/wireframe/index_wireframe.png), [screenshot](docs/wireframe/index.png))
+1. Home ([wireframe](docs/wireframe/index_wireframe.png), [screenshot](docs/screenshot/index.png))
 The landing page for people looking for a new junior developer.
-1. About ([wireframe](docs/wireframe/about_wireframe.png), [screenshot](docs/wireframe/about.png))
+1. About ([wireframe](docs/wireframe/about_wireframe.png), [screenshot](docs/screenshot/about.png))
 The page where a talk a little bit about my history and interest.
-1. Portfolio ([wireframe](docs/wireframe/portfolio_wireframe.png), [screenshot](docs/wireframe/portfolio.png))
+1. Portfolio ([wireframe](docs/wireframe/portfolio_wireframe.png), [screenshot](docs/screenshot/portfolio.png))
 The page where I show the skills that I've learned, my CV, github account and my linkedIn profile.
-1. Blog ([wireframe](docs/wireframe/blog_wireframe.png), [screenshot](docs/wireframe/blog.png))
+1. Blog ([wireframe](docs/wireframe/blog_wireframe.png), [screenshot](docs/screenshot/blog.png))
 The page where I blog.
-1. Contact ([wireframe](docs/wireframe/contact_wireframe.png), [screenshot](docs/wireframe/contact.png))
+1. Contact ([wireframe](docs/wireframe/contact_wireframe.png), [screenshot](docs/screenshot/contact.png))
 The page where people can contact me.
 
 ## Site Map
