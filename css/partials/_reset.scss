@@ -1,10 +1,10 @@
-* {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  box-sizing: border-box;
-  border: solid 1px black;
-}
+// * {
+//   margin: 0;
+//   padding: 0;
+//   text-decoration: none;
+//   box-sizing: border-box;
+//   border: solid 1px black;
+// }
 :root {
   --background-color: rgb(59, 58, 58);
 }
@@ -16,15 +16,12 @@ body {
   background-size: cover;
   color: rgb(59, 58, 58);
   width: 100%;
+  margin: 0;
 }
 nav {
   background: rgb(173, 169, 169);
   height: 80px;
   width: 100%;
-}
-nav url {
-  float: right;
-  margin-right: 20px;
 }
 nav ul {
   display: flex;
@@ -34,13 +31,12 @@ nav ul {
 nav ul li {
   display: inline-block;
   line-height: 80px;
-  margin: 0;
+  margin: 0 auto;
 }
 nav ul li a {
   color: white;
   font-size: 17px;
   text-transform: uppercase;
-  padding: 7px 13px;
   border-radius: 3px;
 }
 a.move.home,
@@ -75,7 +71,6 @@ h1 {
   text-align: center;
   font-weight: bold;
   margin: 10px;
-
 }
 footer {
   @include box-font;

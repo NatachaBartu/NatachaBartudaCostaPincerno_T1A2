@@ -1,13 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,100&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: solid 1px black;
-}
-
 :root {
   --background-color: rgb(59, 58, 58);
 }
@@ -19,17 +10,13 @@ body {
   background-size: cover;
   color: #3b3a3a;
   width: 100%;
+  margin: 0;
 }
 
 nav {
   background: #ada9a9;
   height: 80px;
   width: 100%;
-}
-
-nav url {
-  float: right;
-  margin-right: 20px;
 }
 
 nav ul {
@@ -45,14 +32,13 @@ nav ul {
 nav ul li {
   display: inline-block;
   line-height: 80px;
-  margin: 0;
+  margin: 0 auto;
 }
 
 nav ul li a {
   color: white;
   font-size: 17px;
   text-transform: uppercase;
-  padding: 7px 13px;
   border-radius: 3px;
 }
 
