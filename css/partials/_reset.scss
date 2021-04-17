@@ -1,10 +1,10 @@
-* {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  box-sizing: border-box;
-  border: solid 1px black;
-}
+// * {
+//   margin: 0;
+//   padding: 0;
+//   text-decoration: none;
+//   box-sizing: border-box;
+//   border: solid 1px black;
+// }
 :root {
   --background-color: rgb(59, 58, 58);
 }
@@ -16,56 +16,33 @@ body {
   background-size: cover;
   color: rgb(59, 58, 58);
   width: 100%;
+  margin: 0;
 }
 nav {
   background: rgb(173, 169, 169);
   height: 80px;
   width: 100%;
 }
-nav url {
-  float: right;
-  margin-right: 20px;
-}
 nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding: 0;
 }
 nav ul li {
   display: inline-block;
   line-height: 80px;
-  margin: 0;
+  margin: 0 auto;
 }
 nav ul li a {
   color: white;
+  padding: 0 20px;
   font-size: 17px;
   text-transform: uppercase;
-  padding: 7px 13px;
   border-radius: 3px;
 }
-a.move.home,
-a:hover {
+nav ul li:hover {
   /* box grow a bit and change color when hover */
-  background: rgb(112, 111, 111);
-  transition: 0.5s;
-}
-a.move.about,
-a:hover {
-  background: rgb(112, 111, 111);
-  transition: 0.5s;
-}
-a.move.portfolio,
-a:hover {
-  background: rgb(112, 111, 111);
-  transition: 0.5s;
-}
-a.move.blog,
-a:hover {
-  background: rgb(112, 111, 111);
-  transition: 0.5s;
-}
-a.move.contact,
-a:hover {
   background: rgb(112, 111, 111);
   transition: 0.5s;
 }
@@ -75,7 +52,9 @@ h1 {
   text-align: center;
   font-weight: bold;
   margin: 10px;
-
+}
+article {
+  padding: 20px 0;
 }
 footer {
   @include box-font;
