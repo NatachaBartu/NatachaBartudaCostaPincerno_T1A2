@@ -27,6 +27,7 @@ nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding: 0;
 }
 nav ul li {
   display: inline-block;
@@ -35,33 +36,13 @@ nav ul li {
 }
 nav ul li a {
   color: white;
+  padding: 0 20px;
   font-size: 17px;
   text-transform: uppercase;
   border-radius: 3px;
 }
-a.move.home,
-a:hover {
+nav ul li:hover {
   /* box grow a bit and change color when hover */
-  background: rgb(112, 111, 111);
-  transition: 0.5s;
-}
-a.move.about,
-a:hover {
-  background: rgb(112, 111, 111);
-  transition: 0.5s;
-}
-a.move.portfolio,
-a:hover {
-  background: rgb(112, 111, 111);
-  transition: 0.5s;
-}
-a.move.blog,
-a:hover {
-  background: rgb(112, 111, 111);
-  transition: 0.5s;
-}
-a.move.contact,
-a:hover {
   background: rgb(112, 111, 111);
   transition: 0.5s;
 }
@@ -71,6 +52,9 @@ h1 {
   text-align: center;
   font-weight: bold;
   margin: 10px;
+}
+article {
+  padding: 20px 0;
 }
 footer {
   @include box-font;
