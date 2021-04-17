@@ -26,6 +26,11 @@ nav url {
   float: right;
   margin-right: 20px;
 }
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 nav ul li {
   display: inline-block;
   line-height: 80px;
@@ -66,16 +71,20 @@ a:hover {
 }
 h1 {
   @include box-font;
-  font-size: 2em;
+  font-size: 3em;
   text-align: center;
   font-weight: bold;
-  margin: 0;
+  margin: 10px;
+
 }
 footer {
   @include box-font;
-  margin: 10px;
+  padding: 0 10px;
+  width: 100%;
+  text-align: left;
   position: fixed;
   bottom: 0;
+  background-color: white;
 }
 // @media only screen and (min-width: 601px - 768px) {
 //   /* For tablets: */

@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: solid 1px black;
+}
+
+:root {
+  --background-color: rgb(59, 58, 58);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: url("../images/marble.jpg");
+  height: 100vh;
+  background-size: cover;
+  color: #3b3a3a;
+  width: 100%;
+}
+
+nav {
+  background: #ada9a9;
+  height: 80px;
+  width: 100%;
+}
+
+nav url {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+
+a.move.home,
+a:hover {
+  /* box grow a bit and change color when hover */
+  background: #706f6f;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+a.move.about,
+a:hover {
+  background: #706f6f;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+a.move.portfolio,
+a:hover {
+  background: #706f6f;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+a.move.blog,
+a:hover {
+  background: #706f6f;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+a.move.contact,
+a:hover {
+  background: #706f6f;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #3b3a3a;
+  font-style: italic;
+  text-align: center;
+  font-size: 3em;
+  text-align: center;
+  font-weight: bold;
+  margin: 10px;
+}
+
+footer {
+  font-family: "Montserrat", sans-serif;
+  color: #3b3a3a;
+  font-style: italic;
+  text-align: center;
+  padding: 0 10px;
+  width: 100%;
+  text-align: left;
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  /* For mobile: */
+  nav {
+    height: 160px;
+  }
+}
+
+#big-box {
+  margin: 2px;
+}
+
+.top-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 5px;
+  height: 200px;
+}
+
+h1 {
+  text-align: left;
+}
+
+#myphoto {
+  width: 150px;
+  height: 150px;
+  margin: 20px 200px;
+  border-radius: 50%;
+}
+
+.about-box {
+  margin: 10px;
+}
+
+.my-history p {
+  font-family: "Montserrat", sans-serif;
+  color: #3b3a3a;
+  font-style: italic;
+  text-align: center;
+  display: block;
+  background-color: #eeeaea;
+  border: 2px solid #3b3a3a;
+  -webkit-box-shadow: 3px 6px #3b3a3a;
+          box-shadow: 3px 6px #3b3a3a;
+  border-radius: 3%;
+  margin: 30px;
+  width: 90%;
+  padding: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1em;
+  padding: 7px;
+}
+
+.my-interestes p {
+  font-family: "Montserrat", sans-serif;
+  color: #3b3a3a;
+  font-style: italic;
+  text-align: center;
+  display: block;
+  background-color: #eeeaea;
+  border: 2px solid #3b3a3a;
+  -webkit-box-shadow: 3px 6px #3b3a3a;
+          box-shadow: 3px 6px #3b3a3a;
+  border-radius: 3%;
+  margin: 30px;
+  width: 90%;
+  padding: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1em;
+  padding: 7px;
+}
+
+.article p {
+  font-family: "Montserrat", sans-serif;
+  color: #3b3a3a;
+  font-style: italic;
+  text-align: center;
+  font-size: 3em;
+}
+
+@media only screen and (min-width: 601px) and (max-width: 769px) {
+  /* For tablets: */
+  #myphoto {
+    margin: 20px 60px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* For mobile: */
+  #myphoto {
+    margin: 20px;
+  }
+  .top-box h1 {
+    display: block;
+    text-align: left;
+    font-size: 20px;
+  }
+  h1 {
+    margin: 0;
+  }
+  .my-history p {
+    margin: auto;
+  }
+  .my-interestes p {
+    margin: auto;
+    padding: 20px;
+  }
+}
+/*# sourceMappingURL=about.css.map */

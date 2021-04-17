@@ -4,77 +4,77 @@
 }
 .top-box {
   // this box display my name and photo
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin: 5px;
-    justify-content: space-between;
-  }
-.myphoto {
-    display: block;
-    float:right;
-    width:80px;
-    height:80px;
-    margin: 0 auto;
-    padding: 0;
-  }
-  h1 {
-    text-align: left;
-    margin: 0 ;
-    padding: 0;
-  }
-  #myphoto {
-    display: flex;
-    flex-wrap: wrap;
-    align-self: right;
-    float: right;
-    width: 150px;
-    height: 150px;
-    padding: 5px;
-    border-radius: 50%;
-    }
-    .about-box {
-      margin: 10px;
-    }
-    .my-history p {
-      @include box-font;
-      @include article-box;
-      font-size: 1em;
-      padding: 7px;
-    }
-    .my-interestes p {
-      @include box-font;
-      @include article-box;
-      font-size: 1em;
-      padding: 7px;
-    }
-    .article p {
-      @include box-font;
-      font-size: 3em;
-    }
-    //  responsive media queries
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 5px;
+  height: 200px;
+  //justify-content: space-between;
+}
+// .myphoto {
+//     display: block;
+//     float:right;
+//     width:80px;
+//     height:80px;
+//     margin: 20px auto;
+//     padding: 0;
+//   }
+h1 {
+  text-align: left;
+}
+#myphoto {
+  // align-self: right;
+  // float: right;
+  width: 150px;
+  height: 150px;
+  //padding: 5px;
+  margin: 20px 200px;
+  border-radius: 50%;
+}
+.about-box {
+  margin: 10px;
+}
+.my-history p {
+  @include box-font;
+  @include article-box;
+  font-size: 1em;
+  padding: 7px;
+}
+.my-interestes p {
+  @include box-font;
+  @include article-box;
+  font-size: 1em;
+  padding: 7px;
+}
+.article p {
+  @include box-font;
+  font-size: 3em;
+}
+//  responsive media queries
 @media only screen and (min-width: 601px) and (max-width: 769px) {
   /* For tablets: */
+  #myphoto {
+    margin: 20px 60px;
+  }
 }
 @media only screen and (max-width: 600px) {
   /* For mobile: */
-  .myphoto {
-    width:50px;
-    height:50px;
-    align-content: right;
-    margin: 0;
-    padding: 0;
- }
-  .article h1 {
+  #myphoto {
+    margin: 20px;
+  }
+  .top-box h1 {
+    display: block;
     text-align: left;
-    font-size: 1em;
+    font-size: 20px;
+  }
+  h1 {
     margin: 0;
   }
   .my-history p {
     margin: auto;
   }
-  .my-interestes p{
+  .my-interestes p {
     margin: auto;
     padding: 20px;
   }
-} 
+}
