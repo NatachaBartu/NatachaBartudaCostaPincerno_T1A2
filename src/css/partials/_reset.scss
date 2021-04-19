@@ -53,6 +53,12 @@ h1 {
   font-weight: bold;
   margin: 10px;
 }
+h3 {
+  @include box-font;
+  font-size: 2em;
+  text-align: center;
+  margin: 10px;
+}
 article {
   padding: 20px 0;
 }

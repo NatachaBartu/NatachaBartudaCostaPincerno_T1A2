@@ -62,6 +62,16 @@ h1 {
   margin: 10px;
 }
 
+h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #3b3a3a;
+  font-style: italic;
+  text-align: center;
+  font-size: 2em;
+  text-align: center;
+  margin: 10px;
+}
+
 article {
   padding: 20px 0;
 }
@@ -106,6 +116,7 @@ footer {
 
 h1 {
   text-align: left;
+  font-weight: bold;
 }
 
 #myphoto {
@@ -195,7 +206,6 @@ h1 {
   }
   .my-interestes p {
     margin: auto;
-    padding: 20px;
   }
 }
 /*# sourceMappingURL=about.css.map */

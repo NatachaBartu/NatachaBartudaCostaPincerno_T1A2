@@ -1,6 +1,13 @@
 h1 {
   margin: 30px;
 }
+h2 {
+  @include box-font;
+  font-size: 2em;
+  text-align: center;
+  font-weight: bold;
+  margin: 10px;
+}
 .icon {
   display: flex;
   flex-wrap: wrap;

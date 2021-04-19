@@ -62,6 +62,16 @@ h1 {
   margin: 10px;
 }
 
+h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #3b3a3a;
+  font-style: italic;
+  text-align: center;
+  font-size: 2em;
+  text-align: center;
+  margin: 10px;
+}
+
 article {
   padding: 20px 0;
 }
