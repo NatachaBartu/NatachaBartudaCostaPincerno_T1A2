@@ -15,8 +15,8 @@ body {
 
 nav {
   background: #ada9a9;
-  height: 80px;
   width: 100%;
+  height: 160px;
 }
 
 nav ul {
@@ -62,6 +62,16 @@ h1 {
   margin: 10px;
 }
 
+h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #3b3a3a;
+  font-style: italic;
+  text-align: center;
+  font-size: 2em;
+  text-align: center;
+  margin: 10px;
+}
+
 article {
   padding: 20px 0;
 }
@@ -79,15 +89,34 @@ footer {
   background-color: white;
 }
 
-@media only screen and (max-width: 600px) {
-  /* For mobile: */
+@media only screen and (min-width: 768px) {
+  /* For tablets: */
   nav {
-    height: 160px;
+    height: 80px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  /* for desktop */
+  nav {
+    background: #ada9a9;
+    height: 80px;
   }
 }
 
 h1 {
+  font-size: 1em;
+  color: black;
   margin: 30px;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #3b3a3a;
+  font-style: italic;
+  text-align: center;
+  font-weight: bold;
+  margin: 10px;
 }
 
 .icon {
@@ -108,15 +137,17 @@ h1 {
 
 .icon img {
   display: block;
-  width: 150px;
-  height: 150px;
+  height: 80px;
+  width: 80px;
   border-radius: 4px;
+  margin: 5px;
 }
 
-a img {
-  width: 150px;
-  height: 150px;
+img {
+  height: 80px;
+  width: 80px;
   border-radius: 4px;
+  padding: 5px;
 }
 
 .my-work {
@@ -129,12 +160,11 @@ a img {
   padding: 50px 0;
 }
 
-@media only screen and (min-width: 601px) and (max-width: 769px) {
+@media only screen and (min-width: 768px) {
   /* For tablets: */
   .icon img {
     height: 150px;
     width: 150px;
-    border-radius: 4px;
     padding: 20px;
   }
   .my-work a img {
@@ -145,19 +175,25 @@ a img {
   }
 }
 
-@media only screen and (max-width: 600px) {
-  /* For mobile: */
+@media only screen and (min-width: 992px) {
+  /* for desktop */
   .icon img {
-    height: 80px;
-    width: 80px;
+    width: 150px;
+    height: 150px;
     border-radius: 4px;
     margin: 5px;
   }
-  .my-work a img {
-    height: 80px;
-    width: 80px;
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2em;
+    color: black;
+  }
+  a img {
+    width: 150px;
+    height: 150px;
     border-radius: 4px;
-    padding: 5px;
   }
 }
 /*# sourceMappingURL=portfolio.css.map */

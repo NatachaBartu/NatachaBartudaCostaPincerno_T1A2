@@ -1,9 +1,48 @@
+ #myphoto {
+  width: 100px;
+  height: 100px;
+  margin: 20px 145px;
+  border-radius: 50%;
+}
+.top-box h1 {
+  display: block;
+  text-align: left;
+  font-size: 20px;
+}
+h1 {
+  margin: 0;
+}
+.my-history p {
+  @include box-font;
+  @include article-box;
+  font-size: 1em;
+  padding: 7px;
+  margin: auto;
+}
+.my-interestes p {
+  @include box-font;
+  @include article-box;
+  font-size: 1em;
+  padding: 7px;
+  margin: auto;
+}
+.article p {
+  @include box-font;
+  font-size: 3em;
+ }
+//  responsive media queries
+@media only screen and (min-width: 768px) {
+  /* For tablets: */
+  #myphoto {
+    margin: 20px 200px;
+  }
+}
+@media only screen and (min-width: 992px) {
+/* for desktop */
 #big-box {
-  // box include all sections
   margin: 2px;
 }
 .top-box {
-  // this box display my name and photo
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -12,6 +51,7 @@
 }
 h1 {
   text-align: left;
+  font-weight: bold;
 }
 #myphoto {
   width: 150px;
@@ -23,47 +63,8 @@ h1 {
   margin: 10px;
   padding: 30px;
 }
-.my-history p {
-  @include box-font;
-  @include article-box;
-  font-size: 1em;
-  padding: 7px;
-}
-.my-interestes p {
-  @include box-font;
-  @include article-box;
-  font-size: 1em;
-  padding: 7px;
-}
 .article p {
   @include box-font;
   font-size: 3em;
-}
-//  responsive media queries
-@media only screen and (min-width: 601px) and (max-width: 769px) {
-  /* For tablets: */
-  #myphoto {
-    margin: 20px 60px;
-  }
-}
-@media only screen and (max-width: 600px) {
-  /* For mobile: */
-  #myphoto {
-    margin: 20px;
-  }
-  .top-box h1 {
-    display: block;
-    text-align: left;
-    font-size: 20px;
-  }
-  h1 {
-    margin: 0;
-  }
-  .my-history p {
-    margin: auto;
-  }
-  .my-interestes p {
-    margin: auto;
-    padding: 20px;
-  }
+ }
 }
