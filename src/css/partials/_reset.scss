@@ -20,8 +20,8 @@ body {
 }
 nav {
   background: rgb(173, 169, 169);
-  height: 80px;
   width: 100%;
+  height: 160px;
 }
 nav ul {
   display: flex;
@@ -71,12 +71,24 @@ footer {
   bottom: 0;
   background-color: white;
 }
-// @media only screen and (min-width: 601px - 768px) {
-//   /* For tablets: */
-// }
-@media only screen and (max-width: 600px) {
-  /* For mobile: */
+@media only screen and (min-width: 768px) {
+  /* For tablets: */
   nav {
-    height: 160px;
+    height: 80px;
   }
 }
+@media only screen and (min-width: 992px) {
+  /* for desktop */
+  nav {
+    background: rgb(173, 169, 169);
+    height: 80px;
+  }
+}
+// # Mobile
+// only screen and (min-width: 480px)
+
+// # Tablet
+// only screen and (min-width: 768px) 
+
+// # Desktop
+// only screen and (min-width: 992px)

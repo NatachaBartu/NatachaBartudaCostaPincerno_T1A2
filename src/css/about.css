@@ -15,8 +15,8 @@ body {
 
 nav {
   background: #ada9a9;
-  height: 80px;
   width: 100%;
+  height: 160px;
 }
 
 nav ul {
@@ -89,46 +89,36 @@ footer {
   background-color: white;
 }
 
-@media only screen and (max-width: 600px) {
-  /* For mobile: */
+@media only screen and (min-width: 768px) {
+  /* For tablets: */
   nav {
-    height: 160px;
+    height: 80px;
   }
 }
 
-#big-box {
-  margin: 2px;
-}
-
-.top-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin: 5px;
-  height: 200px;
-}
-
-h1 {
-  text-align: left;
-  font-weight: bold;
+@media only screen and (min-width: 992px) {
+  /* for desktop */
+  nav {
+    background: #ada9a9;
+    height: 80px;
+  }
 }
 
 #myphoto {
-  width: 150px;
-  height: 150px;
-  margin: 20px 200px;
+  width: 100px;
+  height: 100px;
+  margin: 20px 145px;
   border-radius: 50%;
 }
 
-.about-box {
-  margin: 10px;
-  padding: 30px;
+.top-box h1 {
+  display: block;
+  text-align: left;
+  font-size: 20px;
+}
+
+h1 {
+  margin: 0;
 }
 
 .my-history p {
@@ -150,6 +140,7 @@ h1 {
           justify-content: center;
   font-size: 1em;
   padding: 7px;
+  margin: auto;
 }
 
 .my-interestes p {
@@ -171,6 +162,7 @@ h1 {
           justify-content: center;
   font-size: 1em;
   padding: 7px;
+  margin: auto;
 }
 
 .article p {
@@ -181,31 +173,51 @@ h1 {
   font-size: 3em;
 }
 
-@media only screen and (min-width: 601px) and (max-width: 769px) {
+@media only screen and (min-width: 768px) {
   /* For tablets: */
   #myphoto {
-    margin: 20px 60px;
+    margin: 20px 200px;
   }
 }
 
-@media only screen and (max-width: 600px) {
-  /* For mobile: */
-  #myphoto {
-    margin: 20px;
+@media only screen and (min-width: 992px) {
+  /* for desktop */
+  #big-box {
+    margin: 2px;
   }
-  .top-box h1 {
-    display: block;
-    text-align: left;
-    font-size: 20px;
+  .top-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 5px;
+    height: 200px;
   }
   h1 {
-    margin: 0;
+    text-align: left;
+    font-weight: bold;
   }
-  .my-history p {
-    margin: auto;
+  #myphoto {
+    width: 150px;
+    height: 150px;
+    margin: 20px 200px;
+    border-radius: 50%;
   }
-  .my-interestes p {
-    margin: auto;
+  .about-box {
+    margin: 10px;
+    padding: 30px;
+  }
+  .article p {
+    font-family: "Montserrat", sans-serif;
+    color: #3b3a3a;
+    font-style: italic;
+    text-align: center;
+    font-size: 3em;
   }
 }
 /*# sourceMappingURL=about.css.map */

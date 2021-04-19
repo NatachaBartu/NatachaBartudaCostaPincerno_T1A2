@@ -1,10 +1,10 @@
 h1 {
+  font-size: 1em;
+  color: black;
   margin: 30px;
 }
 h2 {
   @include box-font;
-  font-size: 2em;
-  text-align: center;
   font-weight: bold;
   margin: 10px;
 }
@@ -18,27 +18,28 @@ h2 {
 }
 .icon img {
   display: block;
-  width: 150px;
-  height: 150px;
+  height: 80px;
+  width: 80px;
   border-radius: 4px;
+  margin: 5px;
 }
-a img {
-  width: 150px;
-  height: 150px;
+img {
+  height: 80px;
+  width: 80px;
   border-radius: 4px;
+  padding: 5px;
 }
 .my-work {
-display: flex;
-justify-content: space-evenly;
-padding: 50px 0;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px 0;
 }
 //  responsive media queries
-@media only screen and (min-width: 601px) and (max-width: 769px) {
+@media only screen and (min-width: 768px) {
   /* For tablets: */
   .icon img {
     height: 150px;
     width: 150px;
-    border-radius: 4px;
     padding: 20px;
   }
   .my-work a img {
@@ -48,18 +49,24 @@ padding: 50px 0;
     padding: 20px;
   }
 }
-@media only screen and (max-width: 600px) {
-  /* For mobile: */
+@media only screen and (min-width: 992px) {
+  /* for desktop */
   .icon img {
-    height: 80px;
-    width: 80px;
+    width: 150px;
+    height: 150px;
     border-radius: 4px;
     margin: 5px;
   }
-  .my-work a img {
-    height: 80px;
-    width: 80px;
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2em;
+    color: black;
+  }
+  a img {
+    width: 150px;
+    height: 150px;
     border-radius: 4px;
-    padding: 5px;
   }
 }
