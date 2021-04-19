@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Build a webpage where I can demonstrate the skills i am learning trough the bootcamp.
+Build a webpage where I can demonstrate the skills I am learning trough the bootcamp.
 
 ## Site Map
 
@@ -27,9 +27,9 @@ The page where a talk a little bit about my history and interest.
 ![wireframe](docs/wireframe/about_wireframe.png)
 ![screenshot](docs/screenshot/about.png)
 1. Portfolio
+The page where I show the skills that I've learned, my CV, github account and my linkedIn profile.
 ![wireframe](docs/wireframe/portfolio_wireframe.png)
 ![screenshot](docs/screenshot/portfolio.png)
-The page where I show the skills that I've learned, my CV, github account and my linkedIn profile.
 1. Blog
 The page where I blog.
 ![wireframe](docs/wireframe/blog_wireframe.png)
